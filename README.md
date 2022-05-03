@@ -1,7 +1,7 @@
 doge
 ====
 
-![wow screenshot](http://i.imgur.com/HxH9qka.png)
+![wow screenshot](https://raw.githubusercontent.com/bottaluscio/doge-diegoterminal/master/example.png)
 
 
 **doge** is a simple motd script based on the slightly stupid but very funny
