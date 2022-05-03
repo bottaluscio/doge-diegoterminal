@@ -18,7 +18,7 @@ from os.path import dirname, join
 from doge import wow
 
 ROOT = join(dirname(__file__), 'static')
-DEFAULT_DOGE = 'doge.txt'
+DEFAULT_DOGE = 'diego_shit.txt'
 
 
 class Doge(object):
@@ -73,38 +73,8 @@ class Doge(object):
         self.apply_text()
 
     def setup_seasonal(self):
-        """
-        Check if there's some seasonal holiday going on, setup appropriate
-        Shibe picture and load holiday words.
-
-        Note: if there are two or more holidays defined for a certain date,
-        the first one takes precedence.
-
-        """
-
-        # If we've specified a season, just run that one
-        if self.ns.season:
-            return self.load_season(self.ns.season)
-
-        # If we've specified another doge or no doge at all, it does not make
-        # sense to use seasons.
-        if self.ns.doge_path is not None and not self.ns.no_shibe:
-            return
-
-        now = datetime.datetime.now()
-
-        for season, data in wow.SEASONS.items():
-            start, end = data['dates']
-            start_dt = datetime.datetime(now.year, start[0], start[1])
-
-            # Be sane if the holiday season spans over New Year's day.
-            end_dt = datetime.datetime(
-                now.year + (start[0] > end[0] and 1 or 0), end[0], end[1])
-
-            if start_dt <= now <= end_dt:
-                # Wow, much holiday!
-                return self.load_season(season)
-
+    	# Overrided to diego-shit only
+    	return None
     def load_season(self, season_key):
         if season_key == 'none':
             return

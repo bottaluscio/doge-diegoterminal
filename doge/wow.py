@@ -114,15 +114,15 @@ class FrequencyBasedDogeDeque(deque):
 
 PREFIXES = DogeDeque(
     'wow', 'such', 'very', 'so much', 'many', 'lol', 'beautiful',
-    'all the', 'the', 'most', 'very much', 'pretty', 'so',
+    'all the', 'the', 'most', 'very much', 'pretty', 'so', 'fak'
 )
 
 # Please keep in mind that this particular shibe is a terminal hax0r shibe,
 # and the words added should be in that domain
 WORD_LIST = ['computer', 'hax0r', 'code', 'data', 'internet', 'server',
              'hacker', 'terminal', 'doge', 'shibe', 'program', 'free software',
-             'web scale', 'monads', 'git', 'daemon', 'loop', 'pretty',
-             'uptime',
+             'web scale', 'monads', 'git', 'daemon', 'loop', 'pretty','mellonecoglione',
+             'T0gn3k','sar1','IBM','msun','uptime',
              'thread safe', 'posix']
 WORDS = DogeDeque(*WORD_LIST)
 
